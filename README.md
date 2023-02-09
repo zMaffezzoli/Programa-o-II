@@ -1,1 +1,1 @@
-Repositório criado para as aulas de Programação II :)
+Repositorio criado para as aulas de programacao II :)
