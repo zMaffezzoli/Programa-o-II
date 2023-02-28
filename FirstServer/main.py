@@ -1,20 +1,14 @@
-from flask import Flask
+from flask import Flask, jsonify
 from people import *
+from flask_cors import CORS
 
-lista = [p1, p2, p3]
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def index():
-    return f"<h1>Página primária</h1><a href='http://127.0.0.1:5000/pagina2'>Clique aqui para acessar a página secundária</a>"
-
-@app.route("/pagina2")
-def pagina2():
-    yield f"<h1>Página secundária</h1>"
-
-    for i in lista:
-        yield f"<p>Nome: {i.nome}, idade: {i.idade} anos, cidade: {i.cidade}</p>"
-        
-    yield f"<a href='http://127.0.0.1:5000/'>Clique aqui para voltar a página principal</a>"
+    lista = [Pessoa("Fulano", 20, "Pomerode").json(), Pessoa("Fulaninho", 10, "Jaraguá do Sul").json(), Pessoa("Fulanão", 68, "Timbó").json()]
+    
+    return jsonify(lista)
 
 app.run(debug=True)

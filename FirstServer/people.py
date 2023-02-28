@@ -4,6 +4,12 @@ class Pessoa:
         self.idade = idade
         self.cidade = cidade
 
-p1 = Pessoa("Fulano", 30, "Taubaté")
-p2 = Pessoa("Sicrano", 38, "Maringá")
-p3 = Pessoa("Beltrano", 40, "Uberlândia")
+    def __str__(self):
+        return f"Nome: {self.nome} Idade: {self.idade} Cidade: {self.cidade}"
+
+    def json(self):
+        return {
+            "Nome": self.nome,
+            "Idade": self.idade,
+            "Cidade": self.cidade
+        }
