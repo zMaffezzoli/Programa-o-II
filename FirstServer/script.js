@@ -6,7 +6,7 @@ var action = $.ajax({
 
 action.done(function (people){
     for (var p of people){
-        var linha = p.nome + p.idade + p.cidade + "</br>";
+        var linha = "Nome: " + p.nome + " Idade: " + p.idade +  " Data de nascimento: " + p.data + " Cidade: " + p.cidade + "</br>";
         $("#listagem").append(linha);
     }
 });
