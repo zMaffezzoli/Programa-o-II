@@ -1,5 +1,5 @@
 var action = $.ajax({
-    url: "http://localhost:5000",
+    url: "http://localhost:5000/listar_pessoas",
     method: "GET",
     datatype: "json"
 });
