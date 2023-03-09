@@ -11,9 +11,9 @@ $(document).on("click", "#enviar", function(){
 
     var action = $.ajax({
         url: "localhost:5000/incluir_pessoas",
-        method: "post",
+        method: "POST",
         dataType: "json",
-        contentType: "aplication/json",
+        contentType: "application/json",
         data: dados_json
     });
 
@@ -25,8 +25,7 @@ $(document).on("click", "#enviar", function(){
         }
     });
     
-    action.fail(function (jqXHR, textStatus) {
-        mensagem = encontrarErro(jqXHR, textStatus, rota);
-        alert("Erro na chamada ajax: " + mensagem);
+    action.fail(function (retorno2) {
+        alert("Erro na chamada ajax!" + " Detalhes: " + retorno2.detalhes);
     });
 });
