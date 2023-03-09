@@ -8,9 +8,9 @@ $(document).on("click", "#enviar", function(){
     };
 
     var dados_json = JSON.stringify(chave_valor);
-
+    
     var action = $.ajax({
-        url: "localhost:5000/incluir_pessoas",
+        url: "http://localhost:5000/incluir_pessoas",
         method: "POST",
         dataType: "json",
         contentType: "application/json",
@@ -18,13 +18,13 @@ $(document).on("click", "#enviar", function(){
     });
 
     action.done(function (retorno){
-        if (retorno.resultado=="Tudo certo! :)"){
+        if (retorno.resultado == "Tudo certo! :)"){
             alert("Deu certo! Você foi incluso");
         }else{
-            alert("Não deu certo!" + retorno.detalhes);
+            alert("Não deu certo! Detalhes: " + retorno.detalhes);
         }
     });
-    
+
     action.fail(function (retorno2) {
         alert("Erro na chamada ajax!" + " Detalhes: " + retorno2.detalhes);
     });
