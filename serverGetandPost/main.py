@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
-from people import Pessoa
+from models.people import Pessoa
 
 app = Flask(__name__)
 CORS(app)
@@ -13,7 +13,7 @@ def index():
 def incluir_pessoas():
     return render_template("form.html")
 
-@app.route("/dados", methods=["POST"])
+@app.route("/dados", methods=["GET","POST"])
 def data():
     dados = request.get_json()
 
