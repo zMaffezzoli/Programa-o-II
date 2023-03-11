@@ -10,7 +10,7 @@ $(document).on("click", "#enviar", function(){
     var dados_json = JSON.stringify(chave_valor);
 
     var action = $.ajax({
-        url: "http://localhost:5000/dados",
+        url: "http://localhost:5000/dados_receber",
         method: "POST",
         dataType: "json",
         contentType: "application/json",
@@ -18,10 +18,10 @@ $(document).on("click", "#enviar", function(){
     });
 
     action.done(function (retorno){
-        if (retorno.resultado == "Erro!"){
-            alert("Não deu certo! Detalhes: " + retorno.detalhes);
-        }else{
+        if (retorno.resultado == "Tudo certo! :)"){
             alert("Você foi incluso!");
+        }else{
+            alert("Não deu certo! Detalhes: " + retorno.detalhes);
         }
     });
 
