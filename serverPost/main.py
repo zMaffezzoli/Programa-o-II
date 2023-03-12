@@ -1,9 +1,13 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
-from people import *
+from models.people import Pessoa
 
 app = Flask(__name__)
 CORS(app)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route("/incluir_pessoas", methods=['POST'])
 def incluir_pessoa():
