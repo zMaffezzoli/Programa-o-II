@@ -9,7 +9,7 @@ app = Flask(__name__)
 caminho = os.path.dirname(os.path.abspath(__file__))
 caminhopai = os.path.dirname(caminho)
 arquivobd = os.path.join(caminhopai, 'database/')
-arquivobd2 = os.path.join(arquivobd, "pessoas.db")
+arquivobd2 = os.path.join(arquivobd, "dados.db")
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///"+arquivobd2
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
