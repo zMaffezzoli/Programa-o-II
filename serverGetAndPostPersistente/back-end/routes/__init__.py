@@ -1,1 +1,1 @@
-__all__ = ['incluir_pessoas', 'listar_pessoas', 'incluir_celular', 'listar_celular']
+__all__ = ['incluir', 'listar']

@@ -10,7 +10,7 @@ $(document).on("click", "#enviar", function(){
     var dados_json = JSON.stringify(chave_valor);
     
     var action = $.ajax({
-        url: "http://localhost:5000/incluir_pessoas",
+        url: "http://localhost:5000/incluir/Pessoa",
         method: "POST",
         dataType: "json",
         contentType: "application/json",

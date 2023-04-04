@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="../js/scriptincluir.js"></script>
-    <title>Incluir pessoas</title>
+    <script src="../js/script_incluirpessoa.js"></script>
+    <title>Incluir pessoa</title>
 </head>
 <body>
-    <form id="formulario" align="center" onsubmit="return false;">
-        <h1>Formulário</h1>
+    <nav style="text-align: center; ">
+        <ul style="list-style-type: none; width: 95%;">
+            <li style="display: inline;"><a href="incluir_pessoa.html">Pessoa</a></li>
+            <li style="display: inline;"><a href="incluir_celular.html">Celular</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align: center;">Incluir pessoa</h1>
+    <form id="formulario" style="text-align: center;" onsubmit="return false;">
         <p>
             Nome: <input type="text" id="nome" name="nome" value="Ricardo">
         </p>
@@ -23,7 +29,7 @@
         <p>
             Data: <input type="text" id=data" name="data" value="18/06/2000">
         </p>
-        <button id="enviar" onsubmit="return false;">Incluir pessoa!!</button>
+        <button id="enviar" onsubmit="return false;">Incluir pessoa</button>
     </form>
 </body>
 </html>
