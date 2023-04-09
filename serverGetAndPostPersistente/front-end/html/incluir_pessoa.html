@@ -9,27 +9,31 @@
     <title>Incluir pessoa</title>
 </head>
 <body>
-    <nav style="text-align: center; ">
-        <ul style="list-style-type: none; width: 95%;">
-            <li style="display: inline;"><a href="incluir_pessoa.html">Pessoa</a></li>
-            <li style="display: inline;"><a href="incluir_celular.html">Celular</a></li>
+    <nav style="text-align: center;">
+        <ul style="list-style-type: none;">
+            <li style="display: inline;"><a style="text-decoration: none;" href="incluir_pessoa.html">Pessoa</a></li>
+            <li style="display: inline;"><a style="text-decoration: none;" href="incluir_celular.html">Celular</a></li>
         </ul>
     </nav>
-    <h1 style="text-align: center;">Incluir pessoa</h1>
-    <form id="formulario" style="text-align: center;" onsubmit="return false;">
-        <p>
-            Nome: <input type="text" id="nome" name="nome" value="Ricardo">
-        </p>
-        <p>
-            Idade: <input type="text" id="idade" name="idade" value="22">
-        </p>
-        <p>
-            Cidade: <input type="text" id="cidade" name="cidade" value="Blumenau">
-        </p>
-        <p>
-            Data: <input type="text" id=data" name="data" value="18/06/2000">
-        </p>
-        <button id="enviar" onsubmit="return false;">Incluir pessoa</button>
-    </form>
+    <div style="text-align: center; position: absolute; width: 100%">
+        <div style="width: 500px; border: 2px solid #EA9009; border-radius: 20px; display: inline-block; position: relative;">
+            <h1 style="color: #EA9009;">Incluir pessoa</h1>
+            <form id="formulario" onsubmit="return false;">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" value="Ricardo">
+                <br>
+                <label for="idade">Idade: </label>
+                <input type="number" id="idade" name="idade" value="22" min="0" max="120">
+                <br>
+                <label for="cidade">Cidade: </label>
+                <input type="text" id="cidade" name="cidade" value="Blumenau">
+                <br>
+                <label for="data_nascimento">Data de nascimento: </label>
+                <input type="date" id="data_nascimento" name="data_nascimento" value="2000-05-09">
+                <br>
+                <button id="enviar" onsubmit="return false;">Incluir pessoa</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

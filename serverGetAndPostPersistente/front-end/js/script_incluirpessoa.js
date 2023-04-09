@@ -3,12 +3,12 @@ $(document).on("click", "#enviar", function(){
 
     var chave_valor = {};
 
-    for (var i = 0; i < receber.length; i++) {
+    for (var i = 0; i < receber.length; i++){
         chave_valor[receber[i]['name']] = receber[i]['value'];
     };
 
     var dados_json = JSON.stringify(chave_valor);
-    
+
     var action = $.ajax({
         url: "http://localhost:5000/incluir/Pessoa",
         method: "POST",
@@ -18,14 +18,14 @@ $(document).on("click", "#enviar", function(){
     });
 
     action.done(function (retorno){
-        if (retorno.resultado == "Tudo certo! :)"){
+        if (retorno.resultado == "ok"){
             alert("Deu certo! Você foi incluso");
         }else{
             alert("Não deu certo! Detalhes: " + retorno.detalhes);
         }
     });
 
-    action.fail(function (retorno2) {
-        alert("Erro na chamada ajax!" + " Detalhes: " + retorno2.detalhes);
+    action.fail(function (){
+        alert("Erro na chamada ajax!");
     });
 });

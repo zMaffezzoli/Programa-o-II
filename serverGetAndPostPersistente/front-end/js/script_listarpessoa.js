@@ -11,10 +11,16 @@ var action = $.ajax({
 action.done(function (pessoa){
     if (pessoa.resultado == "ok"){
         for (var p of (pessoa.detalhes)){
-            var linha = "ID: " + p.id + " Nome: " + p.nome + " Idade: " + p.idade +  " Data de nascimento: " + p.data + " Cidade: " + p.cidade + "</br>";
+            var linha = "<p style='border: 2px solid #EA9009; border-radius: 20px;'>" + 
+            "ID: " + p.id + "<br>" + 
+            "Nome: " + p.nome + "<br>" +
+            "Idade: " + p.idade + "<br>" +
+            "Data de nascimento: " + p.data_nascimento + "<br>" +
+            "Cidade: " + p.cidade + "</p>";
             $("#listagem").append(linha);
         };
-    }else{
+    }
+    else{
         alert(pessoa.resultado + " " + pessoa.detalhes)
     }
 });

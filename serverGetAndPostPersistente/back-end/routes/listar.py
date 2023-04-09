@@ -17,5 +17,8 @@ def listar(classe):
         meujson = {"resultado": "ok", "detalhes": dados_json}
         return jsonify(meujson)
 
+    elif dados == []:
+        return jsonify({"resultado": "Erro!", "detalhes": "Sem dados."})
+    
     else:
         return jsonify({"resultado": "Erro!", "detalhes": "Classe informada inválida: "+classe})

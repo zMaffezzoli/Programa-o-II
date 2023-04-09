@@ -14,7 +14,7 @@ def incluir(classe):
             nova = Celular(**dados)
         db.session.add(nova)
         db.session.commit()
-        resposta = jsonify({"resultado": "Tudo certo! :)"})
+        resposta = jsonify({"resultado": "ok"})
 
     except Exception as error:
          resposta = jsonify({"resultado": "Erro!", "detalhes": str(error)})

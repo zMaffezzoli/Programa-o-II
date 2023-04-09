@@ -9,12 +9,30 @@
     <title>Incluir celular</title>
 </head>
 <body>
-    <nav style="text-align: center; ">
-        <ul style="list-style-type: none; width: 95%;">
-            <li style="display: inline;"><a href="incluir_pessoa.html">Pessoa</a></li>
-            <li style="display: inline;"><a href="incluir_celular.html">Celular</a></li>
+    <nav style="text-align: center;">
+        <ul style="list-style-type: none;">
+            <li style="display: inline;"><a style="text-decoration: none;" href="incluir_pessoa.html">Pessoa</a></li>
+            <li style="display: inline;"><a style="text-decoration: none;" href="incluir_celular.html">Celular</a></li>
         </ul>
     </nav>
-    <h1 style="text-align: center;">Incluir celular</h1>
+    <div style="text-align: center; position: absolute; width: 100%">
+        <div style="width: 500px; border: 2px solid #169E90; border-radius: 20px; display: inline-block; position: relative;">
+            <h1 style="color: #169E90;">Incluir celular</h1>
+            <form id="formulario" onsubmit="return false;">
+                <label for="modelo">Modelo: </label>
+                <input type="text" id="modelo" name="modelo" value="S9">
+                <br>
+                <label for="marca">Marca: </label>
+                <input type="text" id="marca" name="marca" value="Samsung">
+                <br>
+                <label for="proprietario_id">Proprietário: </label>
+                <select id="proprietario_id" name="proprietario_id">
+
+                </select>
+                <br>
+                <button id="enviar" onsubmit="return false;">Incluir celular</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

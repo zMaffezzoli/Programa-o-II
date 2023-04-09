@@ -16,6 +16,5 @@ class Celular(db.Model):
             "id": self.id,
             "modelo": self.modelo,
             "marca": self.marca,
-            "pessoa_id": self.proprietario_id,
             "proprietario": self.proprietario.json()
         }
