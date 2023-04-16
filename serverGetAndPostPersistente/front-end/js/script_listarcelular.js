@@ -11,12 +11,13 @@ var action = $.ajax({
 action.done(function (celular){
     if (celular.resultado == "ok"){
         for (var c of (celular.detalhes)){
-            var linha = "<p style='border: 2px solid #169E90; border-radius: 20px;'>" + 
-            "ID: " + c.id + "<br>" + 
-            "Modelo: " + c.modelo + "<br>" + 
-            "Marca: " + c.marca + "<br>" + 
-            "Proprietário: "+ c.proprietario.nome + "</p>";
-            $("#listagem").append(linha);
+            var linha = "<tr>" +
+            "<td style='border: 1px solid black; border-collapse: collapse;'>" + c.id + "</td>" + 
+            "<td style='border: 1px solid black; border-collapse: collapse;'>" + c.modelo + "</td>" + 
+            "<td style='border: 1px solid black; border-collapse: collapse;'>" + c.marca + "</td>" + 
+            "<td style='border: 1px solid black; border-collapse: collapse;'>" + c.proprietario.nome + "</td>" + 
+            "</tr>";
+            $("#dados_celulares").append(linha);
         };
     }
     else{

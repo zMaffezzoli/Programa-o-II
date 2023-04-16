@@ -15,12 +15,22 @@
             <li style="display: inline;"><a style="text-decoration: none;" href="listar_celular.html">Celular</a></li>
         </ul>
     </nav>
-    </nav>
-    <div align="center">
+    <div style="text-align: center;">
         <h1 style="color: #EA9009;">Lista de pessoas</h1>
-        <div id="listagem" style="width: 500px;">
+        <table style="border: 1px solid black; border-collapse: collapse; margin: auto;">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black; border-collapse: collapse;">ID</th>
+                    <th style="border: 1px solid black; border-collapse: collapse;">Nome</th>
+                    <th style="border: 1px solid black; border-collapse: collapse;">Idade</th>
+                    <th style="border: 1px solid black; border-collapse: collapse;">Data de nascimento</th>
+                    <th style="border: 1px solid black; border-collapse: collapse;">Cidade</th>
+                </tr>
+            </thead>
+            <tbody id="dados_pessoas">
 
-        </div>
+            </tbody>
+        </table>
         <button id="refresh" onsubmit="return false;">Atualizar lista</button>
     </div>
 </body>

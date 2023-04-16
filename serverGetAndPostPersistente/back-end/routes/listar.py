@@ -1,6 +1,5 @@
 from configs.config import *
-from models.person import *
-from models.cellphone import *
+from models import *
 
 @app.route("/listar/<string:classe>")
 def listar(classe):

@@ -1,6 +1,5 @@
 from configs.config import *
-from models.person import *
-from models.cellphone import *
+from models import *
 
 @app.route("/incluir/<string:classe>", methods=["post"])
 def incluir(classe):

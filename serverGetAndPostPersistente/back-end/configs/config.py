@@ -5,7 +5,6 @@ import os
 
 app = Flask(__name__)
 
-
 caminho = os.path.dirname(os.path.abspath(__file__))
 caminhopai = os.path.dirname(caminho)
 arquivobd = os.path.join(caminhopai, 'database/')
