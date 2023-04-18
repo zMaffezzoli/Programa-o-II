@@ -18,4 +18,4 @@ def incluir(classe):
     except Exception as error:
          resposta = jsonify({"resultado": "Erro!", "detalhes": str(error)})
 
-    return resposta 
+    return resposta

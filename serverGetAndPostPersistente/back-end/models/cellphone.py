@@ -9,7 +9,7 @@ class Celular(db.Model):
     proprietario = db.relationship("Pessoa")
 
     def __str__(self):
-        return f"{self.marca}, {self.modelo}, {self.proprietario}"
+        return f"Id: {self.id}, Modelo: {self.modelo}, Marca: {self.marca}, Proprietário:  {self.proprietario.nome}"
 
     def json(self):
         return{
