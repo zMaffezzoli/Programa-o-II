@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div align="center">
     <h1>Programação II</h1>
     <h2>Tecnologias que serão utilizadas: </h2>
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python-Icon" >
