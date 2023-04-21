@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../js/listar_pessoa.js"></script>
+    <title>Listar pessoa</title>
+</head>
+
+<body>
+    <div id="conteiner">
+        <div id="item">
+            <table>
+                <thead>
+                    <tr id="titulo">
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Sexo</th>
+                        <th>Data de nascimento</th>
+                    </tr>
+                </thead>
+
+                <tbody id="dados">
+
+                </tbody>
+            </table>
+            
+            <button id="refresh" onsubmit="return false;">Atualizar lista</button>
+        </div>
+    </div>
+</body>
+</html>

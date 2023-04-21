@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../js/incluir_computador.js"></script>
+    <title>Incluir computador</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="item">
+            <form id="formulario" onsubmit="return false;">
+                <label for="placa_mae">Placa-mãe: </label>
+                <input type="text" id="placa_mae" name="placa_mae">
+                <br>
+
+                <label for="processador">Processador: </label>
+                <input type="text" id="processador" name="processador">
+                <br>
+
+                <label for="placa_video">Placa de vídeo: </label>
+                <input type="text" id="placa_video" name="placa_video">
+                <br>
+
+                <label for="fonte">Fonte: </label>
+                <select id="fonte" name="fonte">
+                    <option value="100W">100 Watts</option>
+                    <option value="200W">200 Watts</option>
+                    <option value="250W">250 Watts</option>
+                    <option value="300W">300 Watts</option>
+                    <option value="350W">350 Watts</option>
+                    <option value="400W">400 Watts</option>
+                    <option value="450W">450 Watts</option>
+                    <option value="500W">500 Watts</option>
+                    <option value="550W">550 Watts</option>
+                    <option value="600W">600 Watts</option>
+                    <option value="650W">650 Watts</option>
+                    <option value="700W">700 Watts</option>
+                    <option value="750W">750 Watts</option>
+                    <option value="+800W">+800 Watts</option>
+                </select>
+                <br>
+
+                <label for="memoria_ram">Memória ram: </label>
+                <select id="memoria_ram" name="memoria_ram">
+                    <option value="2GB">2 Gigabytes</option>
+                    <option value="4GB">4 Gigabytes</option>
+                    <option value="6GB">6 Gigabytes</option>
+                    <option value="8GB">8 Gigabytes</option>
+                    <option value="10GB">10 Gigabytes</option>
+                    <option value="12GB">12 Gigabytes</option>
+                    <option value="14GB">14 Gigabytes</option>
+                    <option value="16GB">16 Gigabytes</option>
+                    <option value="+16GB">+16 Gigabytes</option>
+                </select>
+                <br>
+
+                <label for="proprietario_id">Proprietário: </label>
+                <select id="proprietario_id" name="proprietario_id">
+
+                </select>
+                <br>
+
+                <button id="enviar" type="submit">Incluir computador</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
