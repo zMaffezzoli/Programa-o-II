@@ -12,11 +12,11 @@ action.done(function (pessoa){
     if (pessoa.resultado == "ok"){
         for (var p of (pessoa.detalhes)){
             var linha = "<tr>" +
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + p.id + "</td>" + 
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + p.nome + "</td>" + 
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + p.idade + "</td>" + 
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + p.data_nascimento + "</td>" + 
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + p.cidade + "</td>" + 
+            "<td>" + p.id + "</td>" + 
+            "<td>" + p.nome + "</td>" + 
+            "<td>" + p.idade + "</td>" + 
+            "<td>" + p.data_nascimento + "</td>" + 
+            "<td>" + p.cidade + "</td>" + 
             "</tr>";
             $("#dados_pessoas").append(linha);
         };

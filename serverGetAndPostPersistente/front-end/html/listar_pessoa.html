@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,38 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../js/script_listarpessoa.js"></script>
     <title>Listar pessoa</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/listar.css">
 </head>
+
 <body>
-    <nav style="text-align: center;">
-        <ul style="list-style-type: none;">
-            <li style="display: inline;"><a style="text-decoration: none;" href="listar_pessoa.html">Pessoa</a></li>
-            <li style="display: inline;"><a style="text-decoration: none;" href="listar_celular.html">Celular</a></li>
+    <nav>
+        <ul>
+            <li><a href="listar_pessoa.html">Pessoa</a></li>
+            <li><a href="listar_celular.html">Celular</a></li>
         </ul>
     </nav>
-    <div style="text-align: center;">
-        <h1 style="color: #EA9009;">Lista de pessoas</h1>
-        <table style="border: 1px solid black; border-collapse: collapse; margin: auto;">
+
+    <div>
+        <h1>Lista de pessoas</h1>
+
+        <table>
             <thead>
                 <tr>
-                    <th style="border: 1px solid black; border-collapse: collapse;">ID</th>
-                    <th style="border: 1px solid black; border-collapse: collapse;">Nome</th>
-                    <th style="border: 1px solid black; border-collapse: collapse;">Idade</th>
-                    <th style="border: 1px solid black; border-collapse: collapse;">Data de nascimento</th>
-                    <th style="border: 1px solid black; border-collapse: collapse;">Cidade</th>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Data de nascimento</th>
+                    <th>Cidade</th>
                 </tr>
             </thead>
+            
             <tbody id="dados_pessoas">
 
             </tbody>
         </table>
-        <button id="refresh" onsubmit="return false;">Atualizar lista</button>
+
+        <button id="refresh" type="submit"">Atualizar lista</button>
     </div>
 </body>
 </html>

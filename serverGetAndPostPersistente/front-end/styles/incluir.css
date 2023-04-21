@@ -1,0 +1,17 @@
+.conteiner{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.item{
+    width: 500px;
+    border: 2px solid #EA9009;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+h1{
+    color: #EA9009;
+}

@@ -12,10 +12,10 @@ action.done(function (celular){
     if (celular.resultado == "ok"){
         for (var c of (celular.detalhes)){
             var linha = "<tr>" +
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + c.id + "</td>" + 
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + c.modelo + "</td>" + 
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + c.marca + "</td>" + 
-            "<td style='border: 1px solid black; border-collapse: collapse;'>" + c.proprietario.nome + "</td>" + 
+            "<td>" + c.id + "</td>" + 
+            "<td>" + c.modelo + "</td>" + 
+            "<td>" + c.marca + "</td>" + 
+            "<td>" + c.proprietario.nome + "</td>" + 
             "</tr>";
             $("#dados_celulares").append(linha);
         };

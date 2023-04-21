@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,40 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../js/script_incluirpessoa.js"></script>
     <title>Incluir pessoa</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/incluir.css">
 </head>
+
 <body>
-    <nav style="text-align: center;">
-        <ul style="list-style-type: none;">
-            <li style="display: inline;"><a style="text-decoration: none;" href="incluir_pessoa.html">Pessoa</a></li>
-            <li style="display: inline;"><a style="text-decoration: none;" href="incluir_celular.html">Celular</a></li>
+    <nav>
+        <ul>
+            <li><a href="incluir_pessoa.html">Pessoa</a></li>
+            <li><a href="incluir_celular.html">Celular</a></li>
         </ul>
     </nav>
-    <div style="text-align: center; position: absolute; width: 100%">
-        <div style="width: 500px; border: 2px solid #EA9009; border-radius: 20px; display: inline-block; position: relative;">
-            <h1 style="color: #EA9009;">Incluir pessoa</h1>
+
+    <div class="conteiner">
+        <div class="item">
+            <h1>Incluir pessoa</h1>
+
             <form id="formulario" onsubmit="return false;">
                 <label for="nome">Nome: </label>
                 <input type="text" id="nome" name="nome" value="Ricardo">
                 <br>
+
                 <label for="idade">Idade: </label>
                 <input type="number" id="idade" name="idade" value="22" min="0" max="120">
                 <br>
+
                 <label for="cidade">Cidade: </label>
                 <input type="text" id="cidade" name="cidade" value="Blumenau">
                 <br>
+
                 <label for="data_nascimento">Data de nascimento: </label>
                 <input type="date" id="data_nascimento" name="data_nascimento" value="2000-05-09">
                 <br>
-                <button id="enviar" onsubmit="return false;">Incluir pessoa</button>
+                
+                <button id="enviar" type="submit"">Incluir pessoa</button>
             </form>
         </div>
     </div>

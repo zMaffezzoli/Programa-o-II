@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,43 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../js/script_listarcelular.js"></script>
     <title>Listar celular</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/listar.css">
+    
+    <style>
+        h1{
+            color: #169E90;
+        }
+    </style>
 </head>
+
 <body>
-    <nav style="text-align: center;">
-        <ul style="list-style-type: none;">
-            <li style="display: inline;"><a style="text-decoration: none;" href="listar_pessoa.html">Pessoa</a></li>
-            <li style="display: inline;"><a style="text-decoration: none;" href="listar_celular.html">Celular</a></li>
+    <nav>
+        <ul>
+            <li><a href="listar_pessoa.html">Pessoa</a></li>
+            <li><a href="listar_celular.html">Celular</a></li>
         </ul>
     </nav>
-    <div style="text-align: center;">
-        <h1 style="color: #169E90;">Lista de celulares</h1>
-        <table style="border: 1px solid black; border-collapse: collapse; margin: auto;">
+
+    <div>
+        <h1>Lista de celulares</h1>
+
+        <table>
             <thead>
                 <tr>
-                    <th style="border: 1px solid black; border-collapse: collapse;">ID</th>
-                    <th style="border: 1px solid black; border-collapse: collapse;">Modelo</th>
-                    <th style="border: 1px solid black; border-collapse: collapse;">Marca</th>
-                    <th style="border: 1px solid black; border-collapse: collapse;">Proprietário</th>
+                    <th>ID</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Proprietário</th>
                 </tr>
             </thead>
+            
             <tbody id="dados_celulares">
 
             </tbody>
         </table>
-        <button id="refresh" onsubmit="return false;">Atualizar lista</button>
+
+        <button id="refresh" type="submit"">Atualizar lista</button>
     </div>
 </body>
 </html>
