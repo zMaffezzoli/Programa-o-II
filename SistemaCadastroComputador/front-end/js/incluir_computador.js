@@ -19,7 +19,7 @@ $(document).on("click", "#enviar", function(){
 
     action.done(function (retorno){
         if (retorno.resultado == "ok"){
-            alert("Deu certo! O celular foi incluso");
+            alert("Deu certo! O computador foi incluso");
         }else{
             alert("Não deu certo! Detalhes: " + retorno.detalhes);
         }

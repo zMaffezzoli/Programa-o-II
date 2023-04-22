@@ -8,11 +8,42 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../js/incluir_computador.js"></script>
     <title>Incluir computador</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/incluir_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/incluir_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/incluir_icon/favicon-16x16.png">
+    <link rel="manifest" href="../icons/incluir_icon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
 </head>
 
 <body>
-    <div class="conteiner">
+    <header>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Incluir</a>
+                <div class="dropdown-content">
+                    <a href="incluir_pessoa.html">Pessoa</a>
+                    <a href="incluir_computador.html">Computador</a>
+                </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Listar</a>
+                    <div class="dropdown-content">
+                    <a href="listar_pessoa.html">Pessoa</a>
+                    <a href="listar_computador.html">Computador</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
         <div class="item">
+            <img src="../images/incluir_computador.png" alt="Logo incluir computador">
+            
             <form id="formulario" onsubmit="return false;">
                 <label for="placa_mae">Placa-mãe: </label>
                 <input type="text" id="placa_mae" name="placa_mae">
