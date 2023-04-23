@@ -4,10 +4,12 @@ from models import *
 @app.route("/listar/<string:classe>")
 def listar(classe):
     dados = None
+
     if classe == "Pessoa":
         dados = db.session.query(Pessoa).all()
     elif classe == "Computador":
         dados = db.session.query(Computador).all()
+        
     if dados:
         dados_json = []
         for x in dados:

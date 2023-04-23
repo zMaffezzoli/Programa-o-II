@@ -15,8 +15,6 @@ nav{
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #0d1117;
 }
@@ -76,13 +74,51 @@ li.dropdown {
 }
 
 .item{
-    text-align: center;
     width: 70%;
     height: 100%;
     display: inline-block;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
     overflow: auto;
+}
+
+form{
+    border: 5px solid #242F40;
+    width: 500px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+#box{
+    width: 258px;
+    text-align: left;
+    margin: auto;
+}
+
+button{
+    margin-top: 15px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    border: 2px solid #242F40;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #242F40;
+    border: 2px solid #0d1117;
+}
+
+button:active{
+    font-size: 19px;
+}
+
+img{
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 table {
@@ -93,16 +129,80 @@ table {
     color: white;
     border-collapse: collapse;
 }
-img{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
+
 th, td{
     padding-left: 15px;
     padding-right: 15px;
     border: 1px solid white;
 }
 
-#refresh{
-    margin-top: 40px;
+label, p, button{
+    color: white;
+}
+
+label, select, #sexo, #data_nascimento{
+    cursor: pointer;
+}
+
+input, select{
+    margin-bottom: 10px;
+}
+
+select{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+option{
+    background-color: #242F40;
+}
+
+#nome, #email, #placa_mae, #processador, #placa_video{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#nome{
+    width: 204px;
+}
+
+#email{
+    width: 211px;
+}
+
+#data_nascimento{
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+#sexo_masculino, #sexo_feminino{
+    margin-left: 24px;
+}
+
+#placa_mae{
+    width: 178px;
+}
+#processador{
+    width: 163px;
+}
+
+#placa_video{
+    width: 150px;
+}
+
+#fonte{
+    width: 208px;
+}
+
+#memoria_ram{
+    width: 155px;
+}
+
+#proprietario_id{
+    width: 165px;
 }
