@@ -91,7 +91,7 @@ form{
 }
 
 #box{
-    width: 258px;
+    width: max-content;
     text-align: left;
     margin: auto;
 }
@@ -117,8 +117,8 @@ button:active{
 }
 
 img{
-    padding-top: 40px;
-    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 table {
