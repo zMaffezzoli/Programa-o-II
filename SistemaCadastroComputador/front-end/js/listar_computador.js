@@ -3,7 +3,7 @@ $(document).on("click", "#refresh", function(){
 });
 
 var action = $.ajax({
-    url: "http://localhost:5000/listar/Computador",
+    url: "http://"+ip+":5000/listar/Computador",
     method: "GET",
     dataType: "json"
 });

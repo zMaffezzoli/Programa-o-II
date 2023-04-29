@@ -3,7 +3,7 @@ $(document).on("click", "#refresh", function(){
 });
 
 var action = $.ajax({
-    url: "http://localhost:5000/listar/Pessoa",
+    url: "http://"+ip+":5000/listar/Pessoa",
     method: "GET",
     dataType: "json"
 });
