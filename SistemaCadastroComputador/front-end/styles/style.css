@@ -92,6 +92,7 @@ form{
 
 #box{
     width: max-content;
+    min-width: 250px;
     text-align: left;
     margin: auto;
 }
@@ -114,6 +115,10 @@ button:hover{
 
 button:active{
     font-size: 19px;
+}
+
+p{
+    display: inline-block;
 }
 
 img{
@@ -145,7 +150,7 @@ label, select, #sexo, #data_nascimento{
 }
 
 input, select{
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 select{
@@ -160,17 +165,23 @@ option{
 
 #nome, #email, #placa_mae, #processador, #placa_video{
     border: none;
+    width: 100%;
     background-color: transparent;
     border-bottom: 1px solid white;
     color: white;
 }
 
-#nome{
-    width: 204px;
+#fonte, #memoria_ram, #proprietario_id{
+    width: 100%;
 }
 
-#email{
-    width: 211px;
+.title_input{
+    display: none;
+}
+
+::placeholder{
+    color: white;
+    font-size: 15px;
 }
 
 #data_nascimento{
@@ -181,28 +192,5 @@ option{
 }
 
 #sexo_masculino, #sexo_feminino{
-    margin-left: 24px;
-}
-
-#placa_mae{
-    width: 178px;
-}
-#processador{
-    width: 163px;
-}
-
-#placa_video{
-    width: 150px;
-}
-
-#fonte{
-    width: 208px;
-}
-
-#memoria_ram{
-    width: 155px;
-}
-
-#proprietario_id{
-    width: 165px;
+    margin-left: 22px;
 }
