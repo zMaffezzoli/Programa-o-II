@@ -180,7 +180,7 @@ option{
 }
 
 ::placeholder{
-    color: white;
+    color: rgb(176, 176, 176);
     font-size: 15px;
 }
 
