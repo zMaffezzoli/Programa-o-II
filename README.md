@@ -9,5 +9,5 @@
     <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery-Icon" >
     <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite-Icon" >
     <br><br>
-    <h3>Repositório dedicado à matéria de Programação II no IFC</p>
+    <h3>Repositório dedicado à matéria de Programação II no IFC</h3>
 </div>
