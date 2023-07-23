@@ -19,6 +19,6 @@ def listar(classe):
         resposta = jsonify({"resultado": "ok", "detalhes": dados_json})
 
     except Exception as e:
-        resposta = jsonify({"resultado": "erro", "detalhes": str(e)})
+        resposta = jsonify({"resultado": "Erro! ", "detalhes": str(e)})
         
     return resposta

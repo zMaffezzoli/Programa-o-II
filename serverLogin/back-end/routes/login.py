@@ -11,7 +11,7 @@ def login():
     encontrar = Pessoa.query.filter_by(login=login, senha=cifrar(senha)).first()
     
     if encontrar is None:
-        resposta =  jsonify({"resultado": "erro", "detalhes": "Usuário ou senha incorreto(s)"})
+        resposta =  jsonify({"resultado": "Erro! ", "detalhes": "Usuário ou senha incorreto(s)"})
 
     else: 
         access_token = create_access_token(identity=login)
