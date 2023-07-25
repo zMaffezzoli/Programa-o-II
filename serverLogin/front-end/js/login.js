@@ -2,8 +2,8 @@ $(function (){
 
     $(document).on("click", "#btLogin", function() {
 
-        login = $("#login").val();
-        senha = $("#senha").val();
+        var login = $("#login").val();
+        var senha = $("#senha").val();
 
         var dados = JSON.stringify({login: login, senha: senha});
 
@@ -18,17 +18,17 @@ $(function (){
                 alert("Erro na conexão, verifique o backend. " + xhr.responseText + " - " + status + " - " + error);
             }
         });
-    });
 
-    function loginOk(retorno){
-        if (retorno.resultado == "ok"){
-            
-            sessionStorage.setItem("login", login);
-            sessionStorage.setItem("jwt", retorno.detalhes);
-
-            window.location = "index.html";
-        }else{
-            alert(retorno.resultado + retorno.detalhes);
+        function loginOk(retorno){
+            if (retorno.resultado == "ok"){
+                
+                sessionStorage.setItem("login", login);
+                sessionStorage.setItem("jwt", retorno.detalhes);
+    
+                window.location = "index.html";
+            }else{
+                alert(retorno.resultado + retorno.detalhes);
+            }
         }
-    }
+    });
 });

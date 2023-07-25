@@ -1,6 +1,6 @@
 $(function() {
 
-    login = sessionStorage.getItem("login");
+    var login = sessionStorage.getItem("login");
     var mensagem = "";
 
     if (login == null){

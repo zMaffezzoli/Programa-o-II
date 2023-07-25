@@ -1,6 +1,6 @@
 $(function (){
 
-    login = sessionStorage.getItem("login");
+    var login = sessionStorage.getItem("login");
 
     if (login !== null){
 
@@ -18,7 +18,7 @@ $(function (){
 
         function listar(retorno){
             if (retorno.resultado == "ok"){
-                for (var p of (retorno.detalhes)){
+                for (let p of (retorno.detalhes)){
                     var linha = "<tr>" +
                     "<td>" + p.id + "</td>" + 
                     "<td>" + p.login + "</td>" + 
