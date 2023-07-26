@@ -1,5 +1,12 @@
 $(function (){
 
+    var login = sessionStorage.getItem("login");
+
+    if(login !== null){
+        alert("Você já está logado!");
+        window.location = "index.html";
+    };
+
     $(document).on("click", "#btLogin", function() {
 
         var login = $("#login").val();
