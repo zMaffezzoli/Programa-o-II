@@ -6,36 +6,34 @@ $(function (){
         alert("Você já está logado!");
         window.location = "index.html";
     };
+});
 
-    $(document).on("click", "#btLogin", function() {
-
+function cadastro(classe){
+    $(document).on("click", "#btCadastro", function() {
         var login = $("#login").val();
         var senha = $("#senha").val();
 
         var dados = JSON.stringify({login: login, senha: senha});
 
         $.ajax({
-            url: "http://localhost:5000/login",
+            url: "http://localhost:5000/cadastro/" + classe,
             method: "POST",
             dataType: "json",
             contentType: "application/json",
             data: dados,
-            success: loginOk,
+            success: cadastroOk,
             error: function (xhr, status, error){
                 alert("Erro na conexão, verifique o backend. " + xhr.responseText + " - " + status + " - " + error);
             }
         });
 
-        function loginOk(retorno){
+        function cadastroOk(retorno){
             if (retorno.resultado == "ok"){
-                
-                sessionStorage.setItem("login", login);
-                sessionStorage.setItem("jwt", retorno.detalhes);
-    
-                window.location = "index.html";
+                alert("Você foi cadastrado!");
+                window.location = "form.html";
             }else{
-                alert(retorno.resultado + retorno.detalhes);
+                alert(retorno.resultado + retorno.detalhes)
             }
         }
     });
-});
+};

@@ -6,7 +6,7 @@
     <title>Sistema de login</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Login</h1>
+    <h1 style="text-align: center;">Cadastro</h1>
 
     <div id="menu" style="text-align: center;">
         <a href="form.html">
@@ -26,11 +26,14 @@
             <label for="senha">Senha: </label>
             <input type="password" id="senha" name="senha">
             <br>
-            <button type="submit" id="btLogin" onClick="return false;">Login</button>
+            <button type="submit" id="btCadastro" onClick="return false;">Cadastrar-me</button>
         </div>
     </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/cadastro.js"></script>
+    <script>
+        cadastro("Pessoa");
+    </script>
 </body>
 </html>
